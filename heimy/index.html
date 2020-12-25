@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en" class="no-touch">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style>
+    .gm-control-active>img {
+      box-sizing: content-box;
+      display: none;
+      left: 50%;
+      pointer-events: none;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%)
+    }
+
+    .gm-control-active>img:nth-child(1) {
+      display: block
+    }
+
+    .gm-control-active:hover>img:nth-child(1),
+    .gm-control-active:active>img:nth-child(1) {
+      display: none
+    }
+
+    .gm-control-active:hover>img:nth-child(2),
+    .gm-control-active:active>img:nth-child(3) {
+      display: block
+    }
+  </style>
+  <link type="text/css" rel="stylesheet" href="./css/css.css">
+  <style>
+    .gm-ui-hover-effect {
+      opacity: .6
+    }
+
+    .gm-ui-hover-effect:hover {
+      opacity: 1
+    }
+  </style>
+  <style>
+    .gm-style .gm-style-cc span,
+    .gm-style .gm-style-cc a,
+    .gm-style .gm-style-mtc div {
+      font-size: 10px;
+      box-sizing: border-box
+    }
+  </style>
+  <style>
+    @media print {
+
+      .gm-style .gmnoprint,
+      .gmnoprint {
+        display: none
+      }
+    }
+
+    @media screen {
+
+      .gm-style .gmnoscreen,
+      .gmnoscreen {
+        display: none
+      }
+    }
+  </style>
+  <style>
+    .gm-style-pbc {
+      transition: opacity ease-in-out;
+      background-color: rgba(0, 0, 0, 0.45);
+      text-align: center
+    }
+
+    .gm-style-pbt {
+      font-size: 22px;
+      color: white;
+      font-family: Roboto, Arial, sans-serif;
+      position: relative;
+      margin: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%)
+    }
+  </style>
+  <style>
+    .gm-style img {
+      max-width: none;
+    }
+
+    .gm-style {
+      font: 400 11px Roboto, Arial, sans-serif;
+      text-decoration: none;
+    }
+  </style>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+  <title>Heimy's World Food Tour</title>
+  <meta name="description" content="">
+
+  <meta property="fb:app_id" content="">
+  <meta property="og:url" content="https://www.curatedby.xyz/heimy/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Heimy's World Food Tour">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <meta property="og:site_name" content="curatedby.xyz">
+  <meta property="og:locale" content="en_gb">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:url" content="https://www.curatedby.xyz/heimy/">
+  <meta name="twitter:title" content="Heimy's World Food Tour">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <link rel="home" href="https://www.curatedby.xyz">
+  <link rel="canonical" href="https://www.curatedby.xyz/heimy/">
+  <style type="text/css">
+    #mc_embed_signup input.mce_inline_error {
+      border-color: #6B0505;
+    }
+
+    #mc_embed_signup div.mce_inline_error {
+      margin: 0 0 1em 0;
+      padding: 5px 10px;
+      background-color: #6B0505;
+      font-weight: bold;
+      z-index: 1;
+      color: #fff;
+    }
+  </style>
+  <script type="text/javascript" charset="UTF-8" src="./js/wareheim.js"></script>
+</head>
+
+<body style="zoom: 1;">
+
+  <div class="guide" style="--guide-color: #3399ff; --dot-gradient: radial-gradient( circle at center, rgba(51, 153, 255, 1 ) 40%, rgba(51, 153, 255, 0 ) 70% )">
+
+    <div class="map" data-api-key="AIzaSyDK4JBJtkBHkWb6ahrNXmciUrsZXwklvPc">
+      <div class="map__map" style="position: relative; overflow: hidden;">
+        <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+          <div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+            <div tabindex="0" aria-label="Map" aria-roledescription="map" role="img"
+              style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: none;">
+              <div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
+                  <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                    <div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -246, -244);">
+                      <div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
+                      </div>
+                      <div style="position: absolute; left: 0px; top: 256px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
+                      </div>
+                      <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
+                      </div>
+                      <div style="position: absolute; left: 256px; top: 0px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
+                      </div>
+                      <div style="position: absolute; left: 512px; top: 0px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
+                      </div>
+                      <div style="position: absolute; left: 512px; top: 256px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
+                      </div>
+                      <div style="position: absolute; left: -256px; top: 256px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
+                      </div>
+                      <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
+                      </div>
+                      <div style="position: absolute; left: 768px; top: 0px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
+                      </div>
+                      <div style="position: absolute; left: 768px; top: 256px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
+                      </div>
+                      <div style="position: absolute; left: -512px; top: 256px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
+                      </div>
+                      <div style="position: absolute; left: -512px; top: 0px; width: 256px; height: 256px;">
+                        <div style="width: 256px; height: 256px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 101; width: 100%;"></div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 102; width: 100%;"></div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 103; width: 100%;"></div>
+                <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
+                </div>
+              </div>
+              <div class="gm-style-pbc" style="z-index: 2; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; opacity: 0;">
+                <p class="gm-style-pbt"></p>
+              </div>
+              <div style="z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;">
+                <div style="z-index: 4; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
+                  <div style="position: absolute; left: 0px; top: 0px; z-index: 104; width: 100%;"></div>
+                  <div style="position: absolute; left: 0px; top: 0px; z-index: 105; width: 100%;"></div>
+                  <div style="position: absolute; left: 0px; top: 0px; z-index: 106; width: 100%;"></div>
+                  <div style="position: absolute; left: 0px; top: 0px; z-index: 107; width: 100%;"></div>
+                </div>
+              </div>
+            </div>
+            <div style="pointer-events: none; width: 100%; height: 100%; box-sizing: border-box; position: absolute; z-index: 1000002; opacity: 0; border: 2px solid rgb(26, 115, 232);"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div>
+              <!-- <div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;"><a target="_blank" rel="noopener"
+                  href="https://maps.google.com/maps?ll=51.481697,-0.000415&amp;z=15&amp;t=m&amp;hl=en&amp;gl=US&amp;mapclient=apiv3" title="Open this area in Google Maps (opens a new window)"
+                  style="position: static; overflow: visible; float: none; display: inline;">
+                  <div style="width: 66px; height: 26px; cursor: pointer;"><img alt="" src="./imgs/google_white5.png" draggable="false"
+                      style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;"></div>
+                </a></div> -->
+            </div>
+            <div></div>
+            <div>
+              <div class="gmnoprint" style="z-index: 1000001; position: absolute; right: 166px; bottom: 0px; width: 87px;">
+                <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px;">
+                  <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                    <div style="width: 1px;"></div>
+                    <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                  </div>
+                  <div
+                    style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                    <a style="text-decoration: none; cursor: pointer; display: none;">Map Data</a><span>Map data ©2020</span></div>
+                </div>
+              </div>
+              <div class="gmnoprint gm-style-cc" draggable="false" style="z-index: 1000001; user-select: none; height: 14px; line-height: 14px; position: absolute; right: 95px; bottom: 0px;">
+                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                  <div style="width: 1px;"></div>
+                  <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                </div>
+                <div
+                  style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                  <a href="https://www.google.com/intl/en_US/help/terms_maps.html" target="_blank" rel="noopener" style="text-decoration: none; cursor: pointer; color: rgb(0, 0, 0);">Terms of Use</a></div>
+              </div>
+              <div draggable="false" class="gm-style-cc" style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
+                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
+                  <div style="width: 1px;"></div>
+                  <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
+                </div>
+                <div
+                  style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
+                  <a target="_blank" rel="noopener" title="Report errors in the road map or imagery to Google" dir="ltr" href="https://www.google.com/maps/@51.4816968,-0.0004147,15z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
+                    style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(0, 0, 0); text-decoration: none; position: relative;">Report a map error</a></div>
+              </div>
+              <div class="gmnoscreen" style="position: absolute; right: 0px; bottom: 0px;">
+                <div style="font-family: Roboto, Arial, sans-serif; font-size: 11px; color: rgb(0, 0, 0); direction: ltr; text-align: right; background-color: rgb(245, 245, 245);">Map data ©2020</div>
+              </div>
+            </div>
+            <div
+              style="background-color: white; padding: 15px 21px; border: 1px solid rgb(171, 171, 171); font-family: Roboto, Arial, sans-serif; color: rgb(34, 34, 34); box-sizing: border-box; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px; z-index: 10000002; display: none; width: 300px; height: 180px; position: absolute; left: 533px; top: 18px;">
+              <div style="padding: 0px 0px 10px; font-size: 16px; box-sizing: border-box;">Map Data</div>
+              <div style="font-size: 13px;">Map data ©2020</div><button draggable="false" title="Close" aria-label="Close" type="button" class="gm-ui-hover-effect"
+                style="background: none; display: block; border: 0px; margin: 0px; padding: 0px; text-transform: none; appearance: none; position: absolute; cursor: pointer; user-select: none; top: 0px; right: 0px; width: 37px; height: 37px;"><img
+                  src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224px%22%20height%3D%2224px%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22%23000000%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M19%206.41L17.59%205%2012%2010.59%206.41%205%205%206.41%2010.59%2012%205%2017.59%206.41%2019%2012%2013.41%2017.59%2019%2019%2017.59%2013.41%2012z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E%0A"
+                  style="pointer-events: none; display: block; width: 13px; height: 13px; margin: 12px;"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map__controls">
+        <div class="map__button map__button--zoom-in">+</div>
+        <div class="map__button map__button--zoom-out">-</div>
+      </div>
+    </div>
+    <div class="map-markers">
+
+      <a id="marker1" class="marker" href="#id1" data-lat="33.5072016" data-lng="-112.0377154" style="transform: translate(460.5px, 165.365px); opacity: 0;">
+        <div class="marker__dot"><img src="./imgs/marker-headshot.png"></div>
+        <small class="marker__label">eric wareheim</small>
+      </a>
+
+    </div>
+    <div class="map-bounds map-bounds--cover-landscape"></div>
+    <div class="map-bounds map-bounds--spot"></div>
+
+
+    <div class="s-tall-hide">
+      <div class="guide-cover-landscape">
+        <div class="grid grid--gutter" data-hide-map-labels="">
+          <div class="s-col-6 xl-col-8 pad-bottom">
+            <div class="guide-cover-landscape__bounds map-cover-bounds"></div>
+            <div class="guide-cover-landscape__image rounded">
+              <img
+                srcset=""
+                alt="" sizes="884px">
+            </div>
+          </div>
+          <div class="s-col-6 xl-col-4 pad-bottom">
+            <div class="guide-cover-landscape__text">
+              <div class="guide-cover-landscape__title">
+                <h1>Heimy's World Food Tour</h1>
+                <div class="pad-top">
+                  <small class="guide-cover-landscape__socials">
+                    <a href="https://www.instagram.com/ericwareheim/" target="_blank">Eric Wareheim</a><br>
+                  </small>
+                </div>
+              </div>
+              <div class="guide-cover-landscape__bio pad-top over-markers">
+                <div class="bio">
+                  <div class="bio__text gap-bottom">
+                    <p>
+                    </p>
+                  </div>
+                  <div class="gap-bottom" style="padding-bottom: 66.2568747978%">
+                    <img class="cover rounded lazy lazy-loaded" src=""
+                      data-srcset=""
+                      sizes="433.984375px"
+                      srcset="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="guide-cover-landscape__contents grid grid--gutter pad-bottom" data-show-map-labels="">
+          <div class="guide-cover-landscape__legend s-col-6 xl-col-4 sticky-center" style="top: 48.5px;">
+              <input class="search-input" type="search" id="search-input" placeholder="Loading..." />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="s-wide-hide">
+      <div class="grid grid--gutter">
+        <div class="s-col-12 guide-cover-portrait">
+          <div class="guide-cover-portrait__cover map-bounds-cover-portrait" data-hide-map-labels="">
+            <div class="guide-cover-portrait__image rounded">
+              <img class="cover"
+                srcset=""
+                alt="" sizes="0px">
+            </div>
+            <div class="guide-cover-portrait__title pad-top pad-bottom" data-hide-map-labels="">
+              <h1>Heimy's World Food Tour</h1>
+              <div class="pad-top">
+                <small class="guide-cover-portrait__socials">
+                  <a href="https://www.instagram.com/ericwareheim/" target="_blank">Eric Wareheim</a><br>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="guide-cover-portrait__space" data-show-map-labels=""></div>
+          <div class="cover">
+          </div>
+        </div>
+        <div class="s-col-12 pad-bottom over-markers" data-hide-map-labels="" data-hide-markers="">
+          <div class="bio">
+            <div class="bio__text gap-bottom">
+              <p>
+              </p>
+            </div>
+            <div class="gap-bottom" style="padding-bottom: 66.2568747978%">
+              <img class="cover rounded lazy" src=""
+                data-srcset=""
+                sizes="0px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spots over-markers" data-show-map-labels="">
+      <div class="spots__map-trigger m-hide"></div>
+      <div class="spots__inner">
+
+
+        <div id="id1" class="spot grid grid--gutter pad-bottom lazy spot--loaded" data-loaded-class="spot--loaded">
+          <div class="spot__images">
+            <!-- <div class="spot__images" style="height: 172px;"> -->
+            <div class="s-col-12 spot__slider-container">
+              <div class="spot__slider rounded" style="height: 172px;">
+                <div class="spot__slider-scroll">
+                  <img class="rounded lazy-loaded" data-ratio="0.751" src="https://place-hold.it/434x326">
+                </div>
+              </div>
+            </div>
+            <div class="s-col-10 s-off-2 m-col-6 m-off-6 xl-col-4 xl-off-8 spot__thumbnail-container">
+              <div class="spot__thumbnail">
+                <img class="cover lazy-loaded" src="https://place-hold.it/434x326">
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BsOr13dnWYW/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13"
+                  style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                  <div style="padding:16px;"> <a href="https://www.instagram.com/p/BsOr13dnWYW/?utm_source=ig_embed&amp;utm_campaign=loading"
+                      style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                      <div style=" display: flex; flex-direction: row; align-items: center;">
+                        <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                        <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                          <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                          <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                        </div>
+                      </div>
+                      <div style="padding: 19% 0;"></div>
+                      <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                              <g>
+                                <path
+                                  d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
+                                </path>
+                              </g>
+                            </g>
+                          </g>
+                        </svg></div>
+                      <div style="padding-top: 8px;">
+                        <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> View this post on Instagram</div>
+                      </div>
+                      <div style="padding: 12.5% 0;"></div>
+                      <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                        <div>
+                          <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div>
+                          <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div>
+                          <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div>
+                        </div>
+                        <div style="margin-left: 8px;">
+                          <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div>
+                          <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                        </div>
+                        <div style="margin-left: auto;">
+                          <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div>
+                          <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div>
+                          <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div>
+                        </div>
+                      </div>
+                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div>
+                        <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div>
+                      </div>
+                    </a>
+                    <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a
+                        href="https://www.instagram.com/p/BsOr13dnWYW/?utm_source=ig_embed&amp;utm_campaign=loading"
+                        style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Eric Wareheim (@ericwareheim)</a></p>
+                  </div>
+                </blockquote>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="s-col-10 m-col-6 xl-col-4" style="margin-top: -12px;">
+            <div class="spot__text">
+              <div class="grid grid--gutter">
+                <div class="s-col-12 pad-top  pad-bottom">
+                </div>
+                <div class="spot__tip s-col-12">
+                </div>
+                <div class="spot__address s-col-12 l-col-6 pad-top">
+                  <div class="pad-bottom">
+                  </div>
+                </div>
+                <div class="spot__info s-col-12 l-col-6 pad-top pad-bottom">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="search">
+    <div class="search__inner">
+      <div class="grid grid--gutter pad-bottom search__input-container">
+        <div class="s-col-12 search__input">
+          <input type="text" name="search" placeholder="Where to?">
+          <div class="search__busy"></div>
+          <div class="search__close toggle-search"></div>
+        </div>
+      </div>
+      <div class="search__results">
+      </div>
+    </div>
+    <div class="search__background toggle-search"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+  <script>
+  var restaurants_json;
+  getJsonRestaurants()
+    .then(result => restaurants_json = result)
+    .then(() => $( "#search-input").keyup({param1: restaurants_json}, handleSearchEvent))
+    .then(() => $( "#search-input").on("search", {param1: restaurants_json}, handleSearchEvent))
+    .then(() => processJson(restaurants_json))
+    .then(() => dynamicallyLoadScript("https://www.instagram.com/embed.js"))
+    .then(() => dynamicallyLoadScript("./js/bundle.js"))
+    .then(() => enableSearch());
+  </script>
+</body>
+
+</html>
