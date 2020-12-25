@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./css/tailwind.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="flex h-screen w-screen bg-gradient-to-br via-purple-800 to-blue-400 from-blue-500 place-content-center">
+    <div id="svg-holder" class="flex h-2/6 w-full place-items-center place-self-center place-content-center">
+      <svg style="width:100%; height:100%">
+        <defs>
+          <!-- <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,900&display=swap');
+          </style> -->
+          <style>
+            text {
+              font-family: 'Nunito Sans', sans-serif;
+            }
+          </style>
+          <g id="text">
+            <text text-anchor="middle" dominant-baseline="middle" x="50%" y="50%" dy="1" font-size="50%" opacity="1">curatedby.xyz</text>
+          </g>
+          <mask id="mask" x="0" y="0" width="100%" height="100%">
+            <rect x="16.666%" y="0" width="66.666%" height="100%" fill="white" rx="8px" ry="8px"></rect>
+            <use xlink:href="#text"></use>
+          </mask>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" mask="url(#mask)" fill="white" fill-opacity="1"></rect>
+        <use xlink:href="#text" mask="url(#mask)"></use>
+      </svg>
+    </div>
+  </div>
+  <script>
+    window.onload = function() {
+      // stupid function to adjust the text once the font has been loaded, forcing the svg to refresh (otherwise the font may be weird)
+      txt = document.getElementById("text")
+      txt.style.fontSize="1500%";
+    }
+  </script>
+</body>
+
+</html>
