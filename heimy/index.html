@@ -3,33 +3,9 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <style>
-    .gm-control-active>img {
-      box-sizing: content-box;
-      display: none;
-      left: 50%;
-      pointer-events: none;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%)
-    }
-
-    .gm-control-active>img:nth-child(1) {
-      display: block
-    }
-
-    .gm-control-active:hover>img:nth-child(1),
-    .gm-control-active:active>img:nth-child(1) {
-      display: none
-    }
-
-    .gm-control-active:hover>img:nth-child(2),
-    .gm-control-active:active>img:nth-child(3) {
-      display: block
-    }
-  </style>
   <link type="text/css" rel="stylesheet" href="./css/css.css">
   <style>
+
     .gm-ui-hover-effect {
       opacity: .6
     }
@@ -37,16 +13,11 @@
     .gm-ui-hover-effect:hover {
       opacity: 1
     }
-  </style>
-  <style>
     .gm-style .gm-style-cc span,
-    .gm-style .gm-style-cc a,
-    .gm-style .gm-style-mtc div {
+    .gm-style .gm-style-cc a {
       font-size: 10px;
       box-sizing: border-box
     }
-  </style>
-  <style>
     @media print {
 
       .gm-style .gmnoprint,
@@ -62,8 +33,6 @@
         display: none
       }
     }
-  </style>
-  <style>
     .gm-style-pbc {
       transition: opacity ease-in-out;
       background-color: rgba(0, 0, 0, 0.45);
@@ -81,8 +50,6 @@
       -ms-transform: translateY(-50%);
       transform: translateY(-50%)
     }
-  </style>
-  <style>
     .gm-style img {
       max-width: none;
     }
@@ -91,7 +58,7 @@
       font: 400 11px Roboto, Arial, sans-serif;
       text-decoration: none;
     }
-  </style>
+    </style>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -133,6 +100,9 @@
     }
   </style>
   <script type="text/javascript" charset="UTF-8" src="./js/wareheim.js"></script>
+  <link href="./css/tailwind.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
 
 <body style="zoom: 1;">
@@ -289,8 +259,38 @@
 
 
     <div class="s-tall-hide">
+
       <div class="guide-cover-landscape">
-        <div class="grid grid--gutter" data-hide-map-labels="">
+        <div class="flex grid--gutter" data-hide-map-labels="">
+
+          <div class="s-col-6 xl-col-12 pad-bottom pad-top">
+            <div class="flex rounded-xl h-full w-full bg-gradient-to-br via-purple-800 to-blue-400 from-blue-500 place-content-start">
+              <div id="svg-holder" class="flex h-4/6 w-1/6 place-self-center">
+                <svg style="width:100%; height:100%" viewBox="0 0 200 50">
+                  <defs>
+                    <style>
+                      text {
+                        font-family: 'Nunito Sans', sans-serif;
+                      }
+                    </style>
+                    <g id="text" style="font-size='1%'">
+                      <text text-anchor="middle" dominant-baseline="middle" x="50%" y="50%" dy="1" opacity="1">curatedby.xyz</text>
+                    </g>
+                    <mask id="mask" x="0" y="0"  height="100%" maskUnits="objectBoundingBox">
+                      <rect x="0" y="0" width="100%" height="100%" fill="white" rx="8px" ry="8px"></rect>
+                      <use xlink:href="#text"></use>
+                    </mask>
+                  </defs>
+                  <rect x="0" y="0" width="100%" height="100%" mask="url(#mask)" fill="white" fill-opacity="1"></rect>
+                  <use xlink:href="#text" mask="url(#mask)"></use>
+                </svg>
+              </div>
+            </div>
+        </div>
+        </div>
+
+          <div class="flex grid--gutter" data-hide-map-labels="">
+
           <div class="s-col-6 xl-col-8 pad-bottom">
             <div class="guide-cover-landscape__bounds map-cover-bounds"></div>
             <div class="guide-cover-landscape__image rounded">
@@ -486,6 +486,12 @@
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
   <script>
+    window.onload = function() {
+      // stupid function to adjust the text once the font has been loaded, forcing the svg to refresh (otherwise the font may be weird)
+      txt = document.getElementById("text")
+      txt.style.fontSize="175%";
+    }
+
   var restaurants_json;
   getJsonRestaurants()
     .then(result => restaurants_json = result)
@@ -495,6 +501,7 @@
     .then(() => dynamicallyLoadScript("https://www.instagram.com/embed.js"))
     .then(() => dynamicallyLoadScript("./js/bundle.js"))
     .then(() => enableSearch());
+
   </script>
 </body>
 

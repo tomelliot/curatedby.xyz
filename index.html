@@ -22,8 +22,8 @@
               font-family: 'Nunito Sans', sans-serif;
             }
           </style>
-          <g id="text">
-            <text text-anchor="middle" dominant-baseline="middle" x="50%" y="50%" dy="1" font-size="50%" opacity="1">curatedby.xyz</text>
+          <g id="text" style="font-size='50%'">
+            <text text-anchor="middle" dominant-baseline="middle" x="50%" y="50%" dy="1" opacity="1">curatedby.xyz</text>
           </g>
           <mask id="mask" x="0" y="0" width="100%" height="100%">
             <rect x="16.666%" y="0" width="66.666%" height="100%" fill="white" rx="8px" ry="8px"></rect>
@@ -39,7 +39,7 @@
     window.onload = function() {
       // stupid function to adjust the text once the font has been loaded, forcing the svg to refresh (otherwise the font may be weird)
       txt = document.getElementById("text")
-      txt.style.fontSize="1500%";
+      txt.style.fontSize="750%";
     }
   </script>
 </body>
