@@ -203,16 +203,16 @@ h3 {
   -webkit-text-stroke-color: black;
   -webkit-text-stroke-width: .5px; }
 
-.grid {
+.curate-grid {
   display: flex;
   flex-wrap: wrap; }
-  .grid--gutter {
+  .curate-grid--gutter {
     padding-left: calc( var( --gutter ) / 2);
     padding-right: calc( var( --gutter ) / 2); }
-    .grid--gutter > [class*="-col-"] {
+    .curate-grid--gutter > [class*="-col-"] {
       padding-left: calc( var( --gutter ) / 2);
       padding-right: calc( var( --gutter ) / 2); }
-      .grid--gutter > [class*="-col-"] > .grid--gutter {
+      .curate-grid--gutter > [class*="-col-"] > .curate-grid--gutter {
         margin-left: calc( var( --gutter ) * -1);
         margin-right: calc( var( --gutter ) * -1); }
 
