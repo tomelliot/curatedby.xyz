@@ -586,7 +586,9 @@
           c = function() {
             r = !r, o()
           };
-        a(".spot__thumbnail img").addEventListener("click", c), l(a(".spot__slider-scroll"), {
+// LISTENER FOR SCROLLING SPOTS
+        // a(".spot__thumbnail img").addEventListener("click", c), l(a(".spot__slider-scroll"), {
+        a(".spot__text").addEventListener("click", c), l(a(".spot__slider-scroll"), {
           draggingClass: "spot__slider-scroll--dragging",
           onClick: c
         }), window.addEventListener("resize", function() {
@@ -844,6 +846,7 @@
             mode: null,
             spot: 0
           },
+// HANDLER FOR PANNING MAP
           l = function() {
             b.classList.toggle("spots--show-map", u.showMap), m.classList.toggle("map-bounds--spot", !u.showMap), m.classList.toggle("map-bounds--spot-expanded", u.showMap), E.classList.toggle("map-markers--hidden", !u.showMarkers), u.minZoom = o(g);
             var t = e.getZoom();
@@ -853,6 +856,7 @@
                 break;
               case "spot":
                 e.setZoom(15), i(n[u.spot], R.center(S.create(), y))
+                // e.setZoom(15), i(n[u.spot], R.center(S.create(), y))
             }
           };
         e.addListener("zoom_changed", function() {
@@ -1271,6 +1275,7 @@
       m = function(t, e, n) {
         return s.add(t.min, e.min, n), s.add(t.max, e.max, n), t
       },
+// CREATE Y DIMS FROM WINDOW SIZE
       y = h([s.fromValues(0, 0), s.fromValues(window.innerWidth, window.innerHeight)]);
     window.addEventListener("resize", function() {
       return s.set(y.max, window.innerWidth, window.innerHeight)
@@ -1291,7 +1296,11 @@
       setFromElementOffset: p,
       size: v,
       center: function(t, e) {
-        var n = s.scale(t, v(t, e), .5);
+        var newe = e;
+        newe.min = [0, 0]
+        newe.max = [0, 0]
+        var n = s.scale(t, v(t, newe), .5);
+        console.log(n)
         return s.add(t, e.min, n)
       },
       setFromElement: f,
@@ -1517,6 +1526,7 @@
           a = s.fromValues(o[0], i[1]);
         return s.subtract(a, f(t, e, n), a)
       },
+// CONVERT FROM PX TO LAT LNG
       pxToWorld: p,
       worldToLatLng: d,
       pxToLatLng: function(t, e) {

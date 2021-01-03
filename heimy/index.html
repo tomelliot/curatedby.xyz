@@ -4,61 +4,6 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <link type="text/css" rel="stylesheet" href="./css/css.css">
-  <style>
-
-    .gm-ui-hover-effect {
-      opacity: .6
-    }
-
-    .gm-ui-hover-effect:hover {
-      opacity: 1
-    }
-    .gm-style .gm-style-cc span,
-    .gm-style .gm-style-cc a {
-      font-size: 10px;
-      box-sizing: border-box
-    }
-    @media print {
-
-      .gm-style .gmnoprint,
-      .gmnoprint {
-        display: none
-      }
-    }
-
-    @media screen {
-
-      .gm-style .gmnoscreen,
-      .gmnoscreen {
-        display: none
-      }
-    }
-    .gm-style-pbc {
-      transition: opacity ease-in-out;
-      background-color: rgba(0, 0, 0, 0.45);
-      text-align: center
-    }
-
-    .gm-style-pbt {
-      font-size: 22px;
-      color: white;
-      font-family: Roboto, Arial, sans-serif;
-      position: relative;
-      margin: 0;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%)
-    }
-    .gm-style img {
-      max-width: none;
-    }
-
-    .gm-style {
-      font: 400 11px Roboto, Arial, sans-serif;
-      text-decoration: none;
-    }
-    </style>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -100,9 +45,10 @@
     }
   </style>
   <script type="text/javascript" charset="UTF-8" src="./js/wareheim.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
   <link href="./css/tailwind.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat&display=swap" rel="stylesheet">
 
   <script type="text/javascript">
     var _paq = window._paq = window._paq || [];
@@ -122,19 +68,21 @@
 
 <body style="zoom: 1;">
 
-  <div class="guide" style="--guide-color: #3399ff; --dot-gradient: radial-gradient( circle at center, rgba(51, 153, 255, 1 ) 40%, rgba(51, 153, 255, 0 ) 70% )">
+  <div class="guide h-screen" style="--text-color:#264653 ; --guide-color: #D29952; --dot-gradient: radial-gradient( circle at center, rgba(0,0,0, 0 ) 40%, rgba(229, 231, 235, 1 ) 100% )">
 
     <!-- <div class="map" data-api-key="AIzaSyDK4JBJtkBHkWb6ahrNXmciUrsZXwklvPc"> -->
     <div class="map" data-api-key="AIzaSyC0QRlrSkmN3d8CpS4MZ2NQ88jDthu_1Bs">
       <div class="map__map" style="position: relative; overflow: hidden;">
-        <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+        <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px;">
+        <!-- <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);"> -->
           <div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
             <div tabindex="0" aria-label="Map" aria-roledescription="map" role="img"
               style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; cursor: url(&quot;https://maps.gstatic.com/mapfiles/openhand_8_8.cur&quot;), default; touch-action: none;">
               <div style="z-index: 1; position: absolute; left: 50%; top: 50%; width: 100%; transform: translate(0px, 0px);">
                 <div style="position: absolute; left: 0px; top: 0px; z-index: 100; width: 100%;">
                   <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
-                    <div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -246, -244);">
+                    <!-- <div style="position: absolute; z-index: 985; transform: matrix(1, 0, 0, 1, -246, -244);"> -->
+                    <div style="position: absolute; z-index: 985;">
                       <div style="position: absolute; left: 256px; top: 256px; width: 256px; height: 256px;">
                         <div style="width: 256px; height: 256px;"></div>
                       </div>
@@ -265,13 +213,53 @@
     <div class="map-markers">
 
       <a id="marker1" class="marker" href="#id1" data-lat="33.5072016" data-lng="-112.0377154" style="transform: translate(460.5px, 165.365px); opacity: 0;">
-        <div class="marker__dot"><img src="./imgs/marker-headshot.png"></div>
+        <!-- <div class="marker__dot"><img src="./imgs/marker-headshot.png"></div> -->
+        <div class="marker__dot"><i class="fas fa-map-marker"></i></div>
         <small class="marker__label">eric wareheim</small>
       </a>
 
     </div>
     <div class="map-bounds map-bounds--cover-landscape"></div>
     <div class="map-bounds map-bounds--spot"></div>
+
+    <div class="h-1/3 curate-grid curate-grid--gutter pad-bottom pad-top">
+      <div class="s-col-12">
+        <div class="title-tile w-full h-full pad-bottom pad-top rounded-xl">
+          <div class="w-5/6 p-5">
+            <div>
+          curated
+          <br>
+          by
+        </div>
+        <div class="curator-title">
+          Heimy
+          </div>
+          </div>
+      </div>
+        <!-- <div class="flex rounded-xl h-full w-full bg-gradient-to-br via-purple-800 to-blue-400 from-blue-500 place-content-start">
+          <div id="svg-holder" class="flex h-4/6 w-1/6 place-self-center">
+            <svg style="width:100%; height:100%" viewBox="0 0 200 50">
+              <defs>
+                <style>
+                  text {
+                    font-family: 'Nunito Sans', sans-serif;
+                  }
+                </style>
+                <g id="text" style="font-size='1%'">
+                  <text text-anchor="middle" dominant-baseline="middle" x="50%" y="50%" dy="1" opacity="1">curatedby.xyz</text>
+                </g>
+                <mask id="mask" x="0" y="0"  height="100%" maskUnits="objectBoundingBox">
+                  <rect x="0" y="0" width="100%" height="100%" fill="white" rx="8px" ry="8px"></rect>
+                  <use xlink:href="#text"></use>
+                </mask>
+              </defs>
+              <rect x="0" y="0" width="100%" height="100%" mask="url(#mask)" fill="white" fill-opacity="1"></rect>
+              <use xlink:href="#text" mask="url(#mask)"></use>
+            </svg>
+          </div>
+        </div> -->
+      </div>
+    </div>
 
 
     <div class="s-tall-hide">
@@ -280,86 +268,77 @@
 
         <div class="flex curate-grid--gutter" data-hide-map-labels="">
 
-          <div class="s-col-6 xl-col-12 pad-bottom pad-top">
-            <div class="flex rounded-xl h-full w-full bg-gradient-to-br via-purple-800 to-blue-400 from-blue-500 place-content-start">
-              <div id="svg-holder" class="flex h-4/6 w-1/6 place-self-center">
-                <svg style="width:100%; height:100%" viewBox="0 0 200 50">
-                  <defs>
-                    <style>
-                      text {
-                        font-family: 'Nunito Sans', sans-serif;
-                      }
-                    </style>
-                    <g id="text" style="font-size='1%'">
-                      <text text-anchor="middle" dominant-baseline="middle" x="50%" y="50%" dy="1" opacity="1">curatedby.xyz</text>
-                    </g>
-                    <mask id="mask" x="0" y="0"  height="100%" maskUnits="objectBoundingBox">
-                      <rect x="0" y="0" width="100%" height="100%" fill="white" rx="8px" ry="8px"></rect>
-                      <use xlink:href="#text"></use>
-                    </mask>
-                  </defs>
-                  <rect x="0" y="0" width="100%" height="100%" mask="url(#mask)" fill="white" fill-opacity="1"></rect>
-                  <use xlink:href="#text" mask="url(#mask)"></use>
-                </svg>
-              </div>
-            </div>
-        </div>
+
         </div>
           <div class="flex curate-grid--gutter" data-hide-map-labels="">
 
-          <div class="s-col-6 xl-col-8 pad-bottom">
+          <div class="s-col-6 m-col-8 pad-bottom">
             <div class="guide-cover-landscape__bounds map-cover-bounds"></div>
-            <div class="guide-cover-landscape__image rounded">
+            <div class="guide-cover-landscape__image curated-rounded">
               <img
-                srcset=""
-                alt="" sizes="884px">
+                srcset="
+                ./imgs/heimy_hero4x.jpg 600w,
+                ./imgs/heimy_hero3x.jpg 400w,
+                ./imgs/heimy_hero2x.jpg 270w,
+                ./imgs/heimy_hero2x.jpg"
+                alt="" >
             </div>
-          </div>
-          <div class="s-col-6 xl-col-4 pad-bottom">
-            <div class="guide-cover-landscape__text">
-              <div class="guide-cover-landscape__title">
-                <h1>Heimy's World Food Tour</h1>
-                <div class="pad-top">
-                  <small class="guide-cover-landscape__socials">
-                    <a href="https://www.instagram.com/ericwareheim/" target="_blank">Eric Wareheim</a><br>
-                  </small>
-                </div>
+
+            </div>
+          <div class="s-col-6 m-col-4 pad-bottom">
+
+          <div class="guide-cover-portrait__title pad-top pad-bottom" data-hide-map-labels="">
+            <h1>Top Food Blog | Wine | Tim & Eric | Master of None</h1>
+            <br>
+            He runs the #1 Food and Wine Blog in America, coordinates the annual FULL EXTREME Las Jaras Pizza Burger Wine Orgy and does some comedy on the side.
+            <br>
+            Let him guide your tongue through the world's most epic tastes - naughty, nice and all the bitties in between.
+              <div class="pad-top">
+                <small class="guide-cover-landscape__socials">
+                  <a href="https://www.instagram.com/ericwareheim/" target="_blank">Eric Wareheim</a><br>
+                </small>
               </div>
-              <div class="guide-cover-landscape__bio pad-top over-markers">
-                <div class="bio">
-                  <div class="bio__text gap-bottom">
-                    <p>
-                    </p>
-                  </div>
-                  <div class="gap-bottom" style="padding-bottom: 66.2568747978%">
-                    <img class="cover rounded lazy lazy-loaded" src=""
-                      data-srcset=""
-                      sizes="433.984375px"
-                      srcset="./imgs/marker-headshot.png">
-                  </div>
+            </div>
+            <div class="guide-cover-landscape__bio pad-top over-markers">
+              <div class="bio">
+                <div class="bio__text gap-bottom">
+                  <p>
+                  </p>
+                </div>
+                <div class="gap-bottom" style="padding-bottom: 66.2568747978%">
+                  <img class="cover curated-rounded lazy lazy-loaded" src=""
+                    data-srcset=""
+                    sizes="433.984375px"
+                    srcset="./imgs/marker-headshot.png">
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="guide-cover-landscape__contents curate-grid curate-grid--gutter pad-bottom" data-show-map-labels="">
-          <div class="guide-cover-landscape__legend s-col-6 xl-col-4 sticky-center" style="top: 48.5px;">
-              <input class="search-input" type="search" id="search-input" placeholder="Loading..." />
-          </div>
+
         </div>
+//search
       </div>
-    </div>
+
     <div class="s-wide-hide">
       <div class="curate-grid curate-grid--gutter">
         <div class="s-col-12 guide-cover-portrait">
           <div class="guide-cover-portrait__cover map-bounds-cover-portrait" data-hide-map-labels="">
-            <div class="guide-cover-portrait__image rounded">
+            <div class="guide-cover-portrait__image curated-rounded">
               <img class="cover"
-                srcset=""
-                alt="" sizes="0px">
+                srcset="
+                ./imgs/heimy_hero4x.jpg 600w,
+                ./imgs/heimy_hero3x.jpg 400w,
+                ./imgs/heimy_hero2x.jpg 270w,
+                ./imgs/heimy_hero2x.jpg"
+                alt="" >
             </div>
             <div class="guide-cover-portrait__title pad-top pad-bottom" data-hide-map-labels="">
-              <h1>Heimy's World Food Tour</h1>
+              <h1>Top Food Blog | Wine | Tim & Eric | Master of None</h1>
+              <br>
+              He runs the #1 Food and Wine Blog in America, coordinates the annual FULL EXTREME Las Jaras Pizza Burger Wine Orgy and does some comedy on the side.
+              <br>
+              Let him guide your tongue through the world's epic tastes - naughty, nice and all the bitties in between.
               <div class="pad-top">
                 <small class="guide-cover-portrait__socials">
                   <a href="https://www.instagram.com/ericwareheim/" target="_blank">Eric Wareheim</a><br>
@@ -377,12 +356,17 @@
               <p>
               </p>
             </div>
-            <div class="gap-bottom" style="padding-bottom: 66.2568747978%">
-              <img class="cover rounded lazy" src=""
-                data-srcset=""
-                sizes="0px">
-            </div>
+
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="over-markers">
+
+      <div class="guide-cover-landscape__contents curate-grid curate-grid--gutter pad-bottom" data-show-map-labels="">
+        <div class="guide-cover-landscape__legend sticky-center s-col-12 m-col-4 m-off-8" style="top: 48.5px;">
+            <input class="search-input" type="search" id="search-input" placeholder="Loading..." />
         </div>
       </div>
     </div>
@@ -396,15 +380,17 @@
           <div class="spot__images">
             <!-- <div class="spot__images" style="height: 172px;"> -->
             <div class="s-col-12 spot__slider-container">
-              <div class="spot__slider rounded" style="height: 172px;">
-                <div class="spot__slider-scroll">
-                  <img class="rounded lazy-loaded" data-ratio="0.751" src="https://place-hold.it/434x326">
-                </div>
+              <div class="spot__slider curated-rounded" style="height: 172px;">
+                <!-- <div class="spot__slider-scroll"> -->
+                  <!-- <img class="curated-rounded lazy-loaded" data-ratio="0.751" src="https://place-hold.it/434x326"> -->
+                <!-- </div> -->
               </div>
             </div>
-            <div class="s-col-10 s-off-2 m-col-6 m-off-6 xl-col-4 xl-off-8 spot__thumbnail-container">
+            <div class="s-col-12 h-80 sm:h-0">
+<!-- blank vertical space to view map on mobile -->
+            </div>
+            <div class="s-col-12 m-col-4 m-off-8 spot__thumbnail-container">
               <div class="spot__thumbnail">
-                <img class="cover lazy-loaded" src="https://place-hold.it/434x326">
                 <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BsOr13dnWYW/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13"
                   style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
                   <div style="padding:16px;"> <a href="https://www.instagram.com/p/BsOr13dnWYW/?utm_source=ig_embed&amp;utm_campaign=loading"
@@ -463,18 +449,21 @@
             </div>
           </div>
 
-          <div class="s-col-10 m-col-6 xl-col-4" style="margin-top: -12px;">
+          <div class="s-col-12 m-col-4" style="margin-top: -12px;">
             <div class="spot__text">
-              <div class="curate-grid curate-grid--gutter">
-                <div class="s-col-12 pad-top  pad-bottom">
-                </div>
-                <div class="spot__tip s-col-12">
-                </div>
-                <div class="spot__address s-col-12 l-col-6 pad-top">
-                  <div class="pad-bottom">
+              <div class="spot__slider-scroll">
+
+                <div class="curate-grid curate-grid--gutter">
+                  <div class="s-col-12 pad-top  pad-bottom">
                   </div>
-                </div>
-                <div class="spot__info s-col-12 l-col-6 pad-top pad-bottom">
+                  <div class="spot__tip s-col-12">
+                  </div>
+                  <div class="spot__address s-col-12 l-col-6 pad-top">
+                    <div class="pad-bottom">
+                    </div>
+                  </div>
+                  <div class="spot__info s-col-12 l-col-6 pad-top pad-bottom">
+                  </div>
                 </div>
               </div>
             </div>
@@ -510,7 +499,7 @@
 
   var restaurants_json;
   getJsonRestaurants()
-    .then(result => restaurants_json = result)
+    .then(result => restaurants_json = result.splice(0,3))
     .then(() => $( "#search-input").keyup({param1: restaurants_json}, handleSearchEvent))
     .then(() => $( "#search-input").on("search", {param1: restaurants_json}, handleSearchEvent))
     .then(() => processJson(restaurants_json))
