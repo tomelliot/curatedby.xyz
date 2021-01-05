@@ -68,7 +68,7 @@
 
 <body style="zoom: 1;">
 
-  <div class="guide h-screen" style="--text-color:#264653 ; --guide-color: #D29952; --dot-gradient: radial-gradient( circle at center, rgba(0,0,0, 0 ) 40%, rgba(229, 231, 235, 1 ) 100% )">
+  <div class="guide h-screen" style="--text-color:#264653 ; --guide-color: #D29952; --dot-gradient: ">
 
     <!-- <div class="map" data-api-key="AIzaSyDK4JBJtkBHkWb6ahrNXmciUrsZXwklvPc"> -->
     <div class="map" data-api-key="AIzaSyC0QRlrSkmN3d8CpS4MZ2NQ88jDthu_1Bs">
@@ -222,42 +222,24 @@
     <div class="map-bounds map-bounds--cover-landscape"></div>
     <div class="map-bounds map-bounds--spot"></div>
 
-    <div class="h-1/3 curate-grid curate-grid--gutter pad-bottom pad-top">
+    <div class="h-2/5 curate-grid curate-grid--gutter pad-bottom pad-top">
       <div class="s-col-12">
-        <div class="title-tile w-full h-full pad-bottom pad-top rounded-xl">
-          <div class="w-5/6 p-5">
-            <div>
-          curated
-          <br>
-          by
+      <div class="title-tile w-full h-full pad-bottom pad-top rounded-xl">
+        <div class="p-5 h-full grid">
+          <div>
+            curated
+            <br>
+            by
+          </div>
+          <div class="curator-title">
+            Heimy
+          </div>
+          <div class="site-by-tag place-self-end">
+            site by <a href="https://twitter.com/iamtomelliot"><i class="fab fa-twitter"></i></a>
+
+          </div>
         </div>
-        <div class="curator-title">
-          Heimy
-          </div>
-          </div>
       </div>
-        <!-- <div class="flex rounded-xl h-full w-full bg-gradient-to-br via-purple-800 to-blue-400 from-blue-500 place-content-start">
-          <div id="svg-holder" class="flex h-4/6 w-1/6 place-self-center">
-            <svg style="width:100%; height:100%" viewBox="0 0 200 50">
-              <defs>
-                <style>
-                  text {
-                    font-family: 'Nunito Sans', sans-serif;
-                  }
-                </style>
-                <g id="text" style="font-size='1%'">
-                  <text text-anchor="middle" dominant-baseline="middle" x="50%" y="50%" dy="1" opacity="1">curatedby.xyz</text>
-                </g>
-                <mask id="mask" x="0" y="0"  height="100%" maskUnits="objectBoundingBox">
-                  <rect x="0" y="0" width="100%" height="100%" fill="white" rx="8px" ry="8px"></rect>
-                  <use xlink:href="#text"></use>
-                </mask>
-              </defs>
-              <rect x="0" y="0" width="100%" height="100%" mask="url(#mask)" fill="white" fill-opacity="1"></rect>
-              <use xlink:href="#text" mask="url(#mask)"></use>
-            </svg>
-          </div>
-        </div> -->
       </div>
     </div>
 
@@ -499,7 +481,7 @@
 
   var restaurants_json;
   getJsonRestaurants()
-    .then(result => restaurants_json = result.splice(0,3))
+    .then(result => restaurants_json = result)
     .then(() => $( "#search-input").keyup({param1: restaurants_json}, handleSearchEvent))
     .then(() => $( "#search-input").on("search", {param1: restaurants_json}, handleSearchEvent))
     .then(() => processJson(restaurants_json))

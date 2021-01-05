@@ -44,7 +44,7 @@ function processJson(json_posts) {
 function enableSearch() {
   const target = $("#search-input")[0]
   target.style['pointer-events'] = "auto";
-  target.placeholder = "Search for something";
+  target.placeholder = "Type a city...";
 }
 
 function dynamicallyLoadScript(url) {

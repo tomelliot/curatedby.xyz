@@ -71,6 +71,25 @@ img, video {
   width: 100%;
   display: block; }
 
+.title-tile {
+  background-color: var(--guide-color);
+  font-family: 'EB Garamond', serif;
+  font-size: 2em;
+  color:var(--text-color);
+}
+
+.curator-title {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.site-by-tag {
+  font-size: 0.5em;
+  font-weight: light;
+  font-family: 'EB Garamond', serif;
+}
+
 .search-input {
   position: relative;
   padding: 15px 20px 15px 20px;
@@ -2114,7 +2133,7 @@ input.input, .signup input[type=text],
   font-size: var(--h2-size); }
 
 .guide-cover-landscape__contents {
-  min-height: 100vh;
+  min-height: 50vh;
   justify-content: flex-end;
   align-items: flex-start; }
 
@@ -2124,7 +2143,8 @@ input.input, .signup input[type=text],
   top: 0; }
 
 .guide-cover-portrait {
-  height: calc( 200vh - var(--nav-height) * 2);
+  /* height: calc( 200vh - var(--nav-height) * 2); */
+  height: calc( 150vh );
   display: flex;
   flex-direction: column;
   pointer-events: none; }
@@ -2134,7 +2154,7 @@ input.input, .signup input[type=text],
     flex-direction: column; }
   .guide-cover-portrait__image {
     flex-shrink: 1;
-    /* height: 100vh; */
+    height: 80vh;
     flex-grow: 1; }
   .guide-cover-portrait__title {
     overflow: hidden;
@@ -2245,18 +2265,6 @@ input.input, .signup input[type=text],
       .map-bounds--spot-expanded {
         width: calc( ( 100vw - var( --nav-width) - var( --gutter ) * 2 ) * 8/12); } }
 
-.title-tile {
-  background-color: var(--guide-color);
-  font-family: 'EB Garamond', serif;
-  font-size: 2em;
-  color:var(--text-color);
-}
-  .curator-title {
-    font-size: 2em;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-
-  }
 
 .legend {
   list-style: none;
