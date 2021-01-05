@@ -474,7 +474,7 @@
 
   var restaurants_json;
   getJsonRestaurants()
-    .then(result => restaurants_json = result.splice(0,3))
+    .then(result => restaurants_json = result)
     .then(() => $( "#search-input").keyup({param1: restaurants_json}, handleSearchEvent))
     .then(() => $( "#search-input").on("search", {param1: restaurants_json}, handleSearchEvent))
     .then(() => processJson(restaurants_json))
